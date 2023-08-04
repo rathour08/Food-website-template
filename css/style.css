@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  display: flex;
+  position: relative;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai 2", cursive;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 21px 10px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li a {
+  display: block;
+  padding: 9px 13px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+#logo {
+  margin: 10px 20px;
+}
+#logo img {
+  height: 60px;
+  width: 60px;
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+#home::before {
+  content: "";
+  background: url(../bg1.jpg) no-repeat center center/cover;
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+#home h1 {
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 20px;
+  margin-top: 65px;
+  font-family: "Bree Serif", serif;
+}
+#home p {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+.btn {
+  padding: 6px 29px;
+  margin: 11px 2px;
+  border: 2px solid white;
+  background-color: rgb(230, 181, 181);
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+/* services container */
+.center {
+  text-align: center;
+}
+.secondary {
+  font-size: 1.6rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+#services {
+  display: flex;
+  margin: 34px;
+}
+#services .box {
+  border: 2px solid brown;
+  margin: 2px 4px;
+  text-align: center;
+  border-radius: 23px;
+  background-color: #f2f2f2;
+}
+#services img {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  display: block;
+}
+.scontainer {
+  margin-top: 88px;
+}
+.scontainer h1 {
+  margin-top: 35px;
+  color: black;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 20px;
+  margin-top: 38px;
+  font-family: "Bree Serif", serif;
+}
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+#services .box:hover {
+  transition: transform 0.5s;
+  transform: translateY(-10px);
+  cursor: pointer;
+  background-color: rgb(244, 236, 227);
+}
+/*client section */
+#client-section {
+  height: 400px;
+  position: relative;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 50px;
+}
+#clients img {
+  height: 183px;
+  width: 210px;
+}
+.client-items{
+    padding: 34px 34px;
+
+}
+.client-items img:hover{
+    transition: transform 0.5s;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+#client-section::before{
+    content: '';
+    position: absolute;
+    background: url(../foodbk.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client-section h1{
+    margin-top: 35px;
+    color: black;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 20px;
+    margin-top: 38px;
+    font-family: "Bree Serif", serif;
+    
+}
+/* contact section */
+#contact h1{
+    margin-top: 35px;
+    color: black;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 20px;
+    margin-top: 38px;
+    font-family: "Bree Serif", serif;
+
+}
+#contact{
+    position: relative;
+    height: 500px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    
+
+}
+#contact-box form{
+    width: 25%;
+
+
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: "Bree Serif", serif;
+
+
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
